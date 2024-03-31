@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="MyTest">
+        <classes>
+           <class name="registertest.RegisterTests">
+                <methods>
+                    <include name="testInvalidEmptyRegisteration"/>
+                    <include name="testInvalidFullName"/>
+                    <include name="testInvalidEmail"/>
+                    <include name="testInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="Logintest.LoginTest">
+                <methods>
+                    <include name="testInvalidEmptyLogin"/>
+                    <include name="testInvalidEmail"/>
+                    <include name="testInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="searchtest.SearchTest">
+                <methods>
+                    <include name="testInvalidSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="MyTest">
+        <classes>
+           <class name="registertest.RegisterTests">
+                <methods>
+                    <include name="testSuccessfulRegister"/>
+                </methods>
+            </class>
+            <class name="Logintest.LoginTest">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                </methods>
+            </class>
+            <class name="searchtest.SearchTest">
+            </class>
+            <class name="carttest.CartTests"></class>
+            <class name="checkouttest.CeckoutTest">
+            </class>
+            <class name="hometest.HomePageTests">
+                <methods>
+                    <include name="testChangLanguage"/>
+                    <include name="testLogOutSuccessfully"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
